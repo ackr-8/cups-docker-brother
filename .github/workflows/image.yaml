@@ -1,4 +1,4 @@
-name: Buildx
+name: Build
 
 on:
   push:
@@ -20,4 +20,4 @@ jobs:
         run: |
           docker buildx build --push \
             --tag ackr8/cups-brlaser:latest \
-            --platform linux/amd64,linux/386,linux/arm64,linux/arm .
+            --platform linux/amd64,linux/arm64,linux/arm .
